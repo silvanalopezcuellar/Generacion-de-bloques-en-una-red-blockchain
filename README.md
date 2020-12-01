@@ -1,0 +1,16 @@
+# Generacion-de-bloques-en-una-red-blockchain
+
+El siguiente repositorio contiene el documento donde se ilustra el proceso de diseño en conjunto con los resultados y los diferentes codigos de hadware, software y pruebas.
+
+Blockchain es una tecnología de hoja de transacciones distribuida, compuesta de una red que se mantiene en constante crecimiento cuyo contenido está vinculado por medio de la criptografía. Para vincular nuevos bloques o transacciones a la red se sigue comúnmente el algoritmo de consenso proof of work, que consiste en proponer una condición que el resultado de la operación de cifrado debe cumplir para ser válido. A este proceso se le conoce como minería o proceso de minado.
+
+El trabajo de grado plantea varias arquitecturas para realizar este proceso de generación de bloques. A partir de una información de entrada y la condición del algoritmo, se genera el resultado cifrado, que satisface las condiciones de validez para que esta nueva transacción obtenida pueda ser añadida a una red blockchain. La implementación se llevó a cabo empleando una FPGA y un computador.
+
+Inicialmente se realizó la arquitectura base en hardware, en la que se desarrolló la unidad principal de minado. Posteriormente, se implementó una arquitectura en software que realiza las mismas funciones que la arquitectura base en hardware con el fin de realizar una validación funcional de los resultados. Finalmente se implementó una arquitectura en hardware con múltiples pipelines o múltiples unidades de minado que funcionan simultáneamente. Se realizó un análisis de tiempo, tamaño de la información de entrada y dificultad de minado. Cada arquitectura se desenvuelve como un sistema de minado, y a partir de la comparación de estos tres, se obtuvieron los siguientes resultados:
+
+El tiempo que demora el sistema de minado en software es abismalmente mayor al tiempo que demoran ambos sistemas en hardware en realizar el proceso de minado. Cabe resaltar que no es posible realizar una comparación cuantitativa objetiva, ya que el sistema operativo sobre el que se ejecuta el sistema en software reparte los recursos del procesador entre diferentes tareas. El sistema de múltiples pipelines tuvo un desempeño del proceso de minado en promedio 10 veces más rápido que la arquitectura base en hardware, con un aumento en la utilización de los recursos lógicos de la FPGA de aproximadamente 4 veces.
+
+Respecto de la condición del algoritmo de consenso, el tiempo que tarda el sistema en realizar el proceso de minado, incrementa aproximadamente 1000 veces con cada aumento unitario del número de ceros, que es el factor que define esta condición y es el más influyente sobre el tiempo de minado de los sistemas diseñados.
+
+El diseño fue implementado de tal forma que al modificar ciertos parámetros, el sistema sea capaz de aceptar cualquier tamaño de información de entrada; y se obtuvo un promedio del tiempo de minado de 333 Mhash/seg (operaciones de cifrado por segundo). A partir de los resultados obtenidos y del proyecto realizado, se consideran como posibles proyecciones a futuro tanto la implementación de diferentes métodos alternativos en la unidad principal de minado, como el desarrollo de un entorno completo de red blockchain. 
+
