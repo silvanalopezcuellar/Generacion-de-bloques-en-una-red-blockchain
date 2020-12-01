@@ -1,0 +1,136 @@
+LIBRARY ieee;              
+--USE ieee.std_logic_arith.all;                                 
+USE ieee.std_logic_1164.all;  
+USE ieee.numeric_std.all; 
+USE ieee.std_logic_signed .all ;
+USE ieee.std_logic_1164.std_ulogic;
+------------------------------------------------------
+ENTITY mining_hardware_tb IS
+GENERIC	( 	  -- GENERIC funcion_hash
+
+				  nonceL		   		: INTEGER	:= 32		;
+				  
+				  -- GENERIC generacion_nonce
+				  
+				  randL		   		: INTEGER	:= 12		;
+				  halfL  				: INTEGER	:= 6  	;  
+				  sequL					: INTEGER	:= 20		;
+				  twicL					: INTEGER	:= 24		;
+				  
+				  -- GENERIC comunicacion
+				  
+				  Convel    			: INTEGER  	:= 104	;  
+			     Nvel      			: INTEGER  	:= 7		;
+				  Conceros				: INTEGER  	:= 16		; 
+				  Nceros					: INTEGER  	:= 5		;
+				  Confinal				: INTEGER  	:= 208  	; 
+				  Nfinal					: INTEGER  	:= 8		;
+				  Conmitadvel 			: INTEGER  	:= 52  	;  
+				  Nmitadvel      		: INTEGER  	:= 6		;
+				  Conbits     			: INTEGER  	:= 7		;	  
+				  Nbits					: INTEGER  	:= 3		;
+				  Con512     			: INTEGER  	:= 511	;  
+				  N512					: INTEGER  	:= 9		;
+				  Conblock    			: INTEGER  	:= 16		;	  
+				  Nblock					: INTEGER  	:= 5		;
+				  Contransmision		: INTEGER  	:= 104  	;  
+				  Ntransmision			: INTEGER  	:= 7		;
+				  Conbits2    			: INTEGER  	:= 380	;  
+				  Nbits2					: INTEGER  	:= 9		;
+				  Xmax 					: INTEGER	:= 511	;
+				  Ymax 					: INTEGER	:= 16		;
+				  MAX_WIDTH			   : INTEGER	:= 380	;
+				  Cont1     			: INTEGER	:= 1000	;
+				  Cont2		         : INTEGER 	:= 9		;
+				  N1				      : INTEGER   := 10		;
+				  N2			      	: INTEGER   := 4		;
+				  Conad					: INTEGER	:= 1000	;
+				  Nad						: INTEGER	:= 10		);
+END ENTITY;
+------------------------------------------------------
+ARCHITECTURE testbench_hw OF mining_hardware_tb IS 
+SIGNAL  clk	               				:	STD_ULOGIC;
+SIGNAL  rst, Rx, Tx							:	STD_ULOGIC;
+SIGNAL  entrada								:	STD_ULOGIC_VECTOR(1360 DOWNTO 0):="11000011100100000110010000000001000000000100000000010000000001010000110100100011010110001101000100110100100011010110001101000100110101010011010110001101000100110101010011010011001101000100110101010011010011001101011100110101010011010011001101011100110100001011010011001101011100110100001011010100101101011100110100001011010100101101001010110100001011010100101101001010110101101011010100101101001010110101101011010001101101001010110101101011010001101101010110110101101011010001101101010110110100111011010001101101010110110100111011010111101101010110110100111011010111101101000001110100111011010111101101000001110101000111010000000011000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000101000000010000010111111111111111111111111111111111111111111";
+--SIGNAL  entrada								:	STD_ULOGIC_VECTOR(685 DOWNTO 0):="11000011100100000110010000000001000000000101000011010010001101011000110100000000110000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000101001111111111111111111111111";
+SIGNAL  i										:	INTEGER:=1360;
+--SIGNAL  i										:	INTEGER:=685;
+
+
+BEGIN
+	-------------- CLK GENERATION-------------------
+	ClkGeneration: PROCESS
+	BEGIN
+		clk <= '0'; 
+		WAIT FOR 10 ns;
+		clk <= '1';
+		WAIT FOR 10 ns;
+	END PROCESS ClkGeneration;
+	------------------------------------------------
+	
+	------- RESET GENERATION --------------------
+	
+	rstGeneration: PROCESS
+	BEGIN		
+		rst		<= '0' AFTER 10 ns,
+						'1' AFTER 30 ns;
+		WAIT FOR 100000 ms;
+	END PROCESS rstGeneration;
+	
+	
+	-------- Get hash signal in SHA block ------------
+	
+	serial: PROCESS
+	BEGIN		
+		
+		FOR i IN 1360 DOWNTO 0 LOOP
+		Rx		<= entrada(i);		
+		WAIT FOR 2.14 us;
+		END LOOP;
+	END PROCESS serial;
+	
+	
+	-- Component Instantiation DUT (Device Under Test)
+	
+	ModuleDUT_hw: ENTITY work.mining_hardware
+	GENERIC	MAP( 	nonceL		   	=>	nonceL,
+						randL					=> randL,	 
+						halfL  	  			=> halfL,
+						sequL					=> sequL,
+						twicL					=> twicL,
+						Convel    		   => Convel,  
+					   Nvel      			=> Nvel,
+					   Conceros				=> Conceros, 
+					   Nceros				=> Nceros,
+					   Confinal				=> Confinal, 
+					   Nfinal				=> Nfinal,
+					   Conmitadvel 		=> Conmitadvel, 
+					   Nmitadvel      	=> Nmitadvel,
+					   Conbits     		=> Conbits,  
+					   Nbits					=> Nbits,
+					   Con512     			=> Con512,  
+					   N512					=> N512,
+					   Conblock    		=> Conblock,  
+					   Nblock				=> Nblock,
+					   Contransmision		=> Contransmision, 
+					   Ntransmision		=> Ntransmision,
+					   Conbits2    		=> Conbits2,  
+					   Nbits2				=> Nbits2,
+					   Xmax 					=> Xmax,
+					   Ymax 					=> Ymax,
+					   MAX_WIDTH			=> MAX_WIDTH,
+						Cont1 				=> Cont1,
+						Cont2					=> Cont2,
+						N1						=> N1,
+						N2						=> N2,
+						Conad					=> Conad,
+						Nad					=> Nad
+					)
+	PORT	  MAP ( clk	    	=>		clk,
+					  rst			=>		rst,
+					  Rx        =>    Rx,
+					  Tx			=> 	Tx
+					 );
+					 
+	--------------------------------------------------					  
+END ARCHITECTURE testbench_hw;	

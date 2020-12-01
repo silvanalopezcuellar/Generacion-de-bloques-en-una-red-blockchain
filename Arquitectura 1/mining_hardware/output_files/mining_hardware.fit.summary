@@ -1,0 +1,22 @@
+Fitter Status : Successful - Fri Nov 29 17:27:38 2019
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : mining_hardware
+Top-level Entity Name : mining_hardware
+Family : Stratix IV
+Device : EP4SGX230KF40C2
+Timing Models : Final
+Logic utilization : 11 %
+    Combinational ALUTs : 15,447 / 182,400 ( 8 % )
+    Memory ALUTs : 0 / 91,200 ( 0 % )
+    Dedicated logic registers : 13,178 / 182,400 ( 7 % )
+Total registers : 13178
+Total pins : 5 / 888 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 14,625,792 ( 0 % )
+DSP block 18-bit elements : 2 / 1,288 ( < 1 % )
+Total GXB Receiver Channel PCS : 0 / 24 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 36 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 24 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 36 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

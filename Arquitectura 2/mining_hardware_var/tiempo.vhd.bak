@@ -1,0 +1,138 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------
+ENTITY tiempo IS
+	GENERIC	( Cont1     			: INTEGER	:= 10000000;
+				  Cont2		         : INTEGER 	:= 9;
+				  N1				      : INTEGER   := 32;
+				  
+				  
+				  N2			      	: INTEGER   := 4;
+				  Conad					: INTEGER	:= 10000000;
+				  Nad						: INTEGER	:= 32);
+				  
+	PORT		( clk				:	IN		STD_ULOGIC;
+				  rst	      	:	IN 	STD_ULOGIC;
+				  enable			:	IN 	STD_ULOGIC;
+				  go				:	IN 	STD_ULOGIC;
+				  salidatiempo	:  OUT 	STD_ULOGIC_VECTOR(15 DOWNTO 0)
+				  );
+END ENTITY;
+---------------------------------- 
+ARCHITECTURE tiempoArch OF tiempo IS
+
+	SIGNAL	digi00,digi0,digi1,digi2								:  STD_ULOGIC_VECTOR(N2-1 DOWNTO 0);
+	--SIGNAL 	sdig00,sdig0,sdig1,sdig2								:  STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL   ena0, ena1, ena2, ena3, ena4, ena5, enadri		:  STD_ULOGIC;
+	SIGNAL	max_tick2, max_tick3, ignore							:	STD_ULOGIC;
+	--SIGNAL   anillo 														:	STD_LOGIC_VECTOR(N3-1 DOWNTO 0);
+	--SIGNAL   count0_vector,count1_vector,count2_vector			:	STD_LOGIC_VECTOR(31 DOWNTO 0):= "00000000000000000000000000000000" ;
+	
+	
+BEGIN
+
+	ena5 			 	  <= enable;
+	ena1 				  <= enable AND go;
+	ena3 				  <= max_tick2 AND ena2;
+	ena4 				  <= max_tick3 AND ena3;
+	salidatiempo(15) <= digi2(3);
+	salidatiempo(14) <= digi2(2);
+	salidatiempo(13) <= digi2(1);
+   salidatiempo(12) <= digi2(0);
+	salidatiempo(11) <= digi1(3);
+	salidatiempo(10) <= digi1(2);
+	salidatiempo(9)  <= digi1(1);
+   salidatiempo(8)  <= digi1(0);
+	salidatiempo(7)  <= digi0(3);
+	salidatiempo(6)  <= digi0(2);
+	salidatiempo(5)  <= digi0(1);
+   salidatiempo(4)  <= digi0(0);
+	salidatiempo(3)  <= digi00(3);
+	salidatiempo(2)  <= digi00(2);
+	salidatiempo(1)  <= digi00(1);
+   salidatiempo(0)  <= digi00(0);
+
+										
+	contModule_0: ENTITY work.cont
+	GENERIC MAP( Rstvalue => 0,
+						Con => 50000,
+					 N	  => 16 )
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena5,
+				  contMaxTick	   =>	ena0); -- Contador para pruebas
+				  
+	
+	contModule_base: ENTITY work.cont
+	GENERIC MAP(Rstvalue => 0,
+					Con => Conad,
+					 N	  => Nad )
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena1,
+				  contMaxTick	   =>	enadri);
+
+				 
+	contModule_00: ENTITY work.cont
+	GENERIC MAP(Rstvalue => 0,
+					Con => Cont2,
+					 N	  => N2 )
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	enadri,
+				  contMaxTick	   =>	ignore,
+				  salidacount		=> digi00);
+													-- Contador cada 10 ms	
+				 
+	contModule_1: ENTITY work.cont
+	GENERIC MAP(Rstvalue => 0,
+					Con => Cont1,
+					 N	  => N1 )
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena1,
+				  contMaxTick	   =>	ena2);
+													-- Contador de cada 100 ms
+				 
+	contModule_2: ENTITY work.cont
+	GENERIC MAP( Rstvalue => 0,
+					Con => Cont2,
+					 N	  => N2)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena2,
+				  contMaxTick	   =>	max_tick2,
+				  salidacount		=> digi0);
+												-- Contador de 0 a 900 ms
+				 
+	contModule_3: ENTITY work.cont
+	GENERIC MAP( Rstvalue => 0,
+					Con => Cont2,
+					 N	  => N2)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena3,
+				  contMaxTick	   =>	max_tick3,
+				  salidacount		=> digi1);
+												-- contador de 0 a 9 s
+	contModule_4: ENTITY work.cont
+	GENERIC MAP( Rstvalue => 0,
+					Con => Cont2,
+					 N	  => N2)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> '0',
+				  ena_cont		   =>	ena4,
+				  salidacount		=> digi2);
+												-- contador de 0 a 9 décimas de segundo
+
+				 
+		
+END ARCHITECTURE tiempoArch;

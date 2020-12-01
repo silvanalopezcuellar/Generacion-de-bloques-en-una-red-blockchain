@@ -1,0 +1,138 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+--USE ieee.std_logic_arith.all;
+----------------------------------
+ENTITY generacion_nonce IS
+	GENERIC	( randL		   :			INTEGER ;
+				  halfL  		:			INTEGER ;  
+				  sequL			:			INTEGER ;
+				  twicL			:			INTEGER	);
+	PORT		( clk				:	IN		STD_ULOGIC;
+				  rst      		:	IN 	STD_ULOGIC;
+				  activo_nonce	:	IN		STD_ULOGIC;
+				  semilla_x0	:	IN 	STD_ULOGIC_VECTOR(randL-1 DOWNTO 0):="011000";
+				  MaxTseq		:	OUT		STD_ULOGIC;
+				  nonce_valid	:	OUT	STD_ULOGIC;
+				  nonce			:	OUT	STD_ULOGIC_VECTOR(randL+sequL-1 DOWNTO 0)
+				 );
+END ENTITY;
+---------------------------------- 
+ARCHITECTURE generacion_nonceArch OF generacion_nonce IS
+	
+	SIGNAL	control_regsem								:  STD_ULOGIC_VECTOR(1 DOWNTO 0);	
+	SIGNAL	contseq_regsem								:  STD_ULOGIC_VECTOR(halfL-1 DOWNTO 0);	
+	SIGNAL	dataa, cuadradosm_out, regsem_mult	:  STD_ULOGIC_VECTOR(randL-1 DOWNTO 0);
+	SIGNAL	contseq										:  STD_ULOGIC_VECTOR(sequL-1 DOWNTO 0);	
+	SIGNAL	result, mult_cuadm						:  STD_ULOGIC_VECTOR(twicL-1 DOWNTO 0);	
+	SIGNAL	control_mult, mult_control, contingencia, 
+			control_nbluid ,control_cuadm, ena_contseq, 
+			syn_clr_contseq, maxtickseq, maxtickseed, 
+			ena_contseed, syn_clr_contseed			:	STD_ULOGIC;
+
+	
+BEGIN
+																			-- Instanciacion de los Modulos
+	Modulemultiplicador: ENTITY work.multiplicador
+	GENERIC	MAP ( randL			=> randL,	 
+					halfL  	  		=> halfL,
+					sequL				=> sequL,
+					twicL				=> twicL )
+	PORT MAP ( 	dataa				=> regsem_mult,
+					control_mult 	=> control_mult,
+					mult_control 	=> mult_control,
+					mult_cuadm		=> mult_cuadm
+				);
+	
+	Module_comparador: ENTITY work.comparador
+	GENERIC	MAP ( randL			=> randL,	 
+					halfL  	  		=> halfL,
+					sequL				=> sequL,
+					twicL				=> twicL )
+	PORT MAP (	maxtickseed 	=> maxtickseed,
+					cuadradosm_out	=> cuadradosm_out,
+					contingencia 	=> contingencia
+				);
+	
+	Module_nonce_build: ENTITY work.nonce_build
+	GENERIC	MAP ( randL			=> randL,	 
+					halfL  	  		=> halfL,
+					sequL				=> sequL,
+					twicL				=> twicL )
+	PORT MAP (	clk				=> clk,
+					rst				=> rst,
+					control_nbluid	=> control_nbluid,
+					cuadradosm_out	=> cuadradosm_out,
+					contseq			=> contseq,
+					nonce				=> nonce		
+				 );
+			 
+	Module_cuadrados_medios : ENTITY work.cuadrados_medios
+	GENERIC	MAP ( randL			=> randL,	 
+					halfL  	  		=> halfL,
+					sequL				=> sequL,
+					twicL				=> twicL )
+	PORT MAP (	clk				=> clk,
+					rst				=> rst,
+					control_cuadm	=> control_cuadm,
+					mult_cuadm		=> mult_cuadm,
+					cuadradosm_out	=> cuadradosm_out
+				 );
+	
+	Module_registro_semillas : ENTITY work.registro_semillas
+	GENERIC	MAP ( randL				=> randL,	 
+					halfL  		  		=> halfL,
+					sequL					=> sequL,
+					twicL					=> twicL )
+	PORT MAP (	clk					=> clk,
+					rst					=> rst,
+					control_regsem		=> control_regsem,
+					contseq_regsem		=> contseq_regsem,
+					semilla_x0			=> semilla_x0,
+					cuadradosm_regsem	=> cuadradosm_out,
+					regsem_mult			=> regsem_mult
+					);
+	
+	Module_control_nonce: ENTITY work.control_gen_n
+	PORT		MAP( clk	      				=> clk,
+					  rst	      				=> rst,
+					  activo_nonce				=> activo_nonce,
+					  contingencia				=> contingencia,
+					  maxtickseed				=> maxtickseed,
+					  mult_control				=>	mult_control,
+					  control_regsem			=>	control_regsem,
+					  control_cuadradosm		=> control_cuadm,
+					  control_nbluid			=> control_nbluid,
+					  control_mult				=> control_mult,
+					  ena_contseq				=> ena_contseq,
+					  syn_clr_contseq			=> syn_clr_contseq,
+					  syn_clr_contseed		=> syn_clr_contseed,
+					  ena_contseed				=> ena_contseed,
+					  nonce_valid				=> nonce_valid
+					);
+
+	Module_ContRegisterseq : 	ENTITY work.contGEN
+	GENERIC	MAP(  Con       		=> 2**sequL,
+						N					=>	sequL,
+						R					=>	halfL )
+	PORT	MAP( clk						=> clk,
+				  rst						=> rst,
+				  syn_clr_cont			=> syn_clr_contseq,
+				  ena_cont				=> ena_contseq,
+				  contMaxTick			=> MaxTseq,
+				  salidacount  		=> contseq,
+				  contseq_regsem		=>	contseq_regsem
+				  );
+				  
+	Module_ContSeedRst : 	ENTITY work.cont_normal
+	GENERIC MAP( Rstvalue       	=> 0,
+					  Con       		=> 9,
+					  N					=>	4)
+	PORT	MAP( clk				=> clk,
+				  rst				=> rst,
+				  syn_clr_cont	=> syn_clr_contseed,
+				  ena_cont		=> ena_contseed,
+				  contMaxTick	=> maxtickseed
+				  );	  
+
+END ARCHITECTURE generacion_nonceArch;

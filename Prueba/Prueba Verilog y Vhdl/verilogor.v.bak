@@ -1,0 +1,21 @@
+//======================================================================
+//
+// testVERILOG.v
+// --------
+// Try of a test file including an OR function using VERILOG.
+//
+//======================================================================
+
+module verilogor(
+              // two OR inputs.
+              input wire           bit0,
+              input wire           bit1,
+              // Data ports.
+              output wire          outbit
+             );
+
+  //----------------------------------------------------------------
+  assign outbit     = bit0 or bit1;
+// End verilogor.v
+//======================================================================
+

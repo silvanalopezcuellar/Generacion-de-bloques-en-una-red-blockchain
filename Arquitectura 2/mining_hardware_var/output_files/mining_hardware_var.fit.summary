@@ -1,0 +1,11 @@
+I/O Assignment Analysis Status : Successful - Mon Nov 25 20:59:18 2019
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : mining_hardware_var
+Top-level Entity Name : mining_hardware_var
+Family : Stratix IV
+Device : EP4SGX230KF40C2
+Timing Models : Final
+Total pins : 5 / 888 ( < 1 % )
+Total virtual pins : 0
+Total PLLs : 0 / 8 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,33 @@
+LIBRARY IEEE;
+USE ieee.STD_LOGIC_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------
+ENTITY Reg_Nonce IS
+	PORT		( clk						:	IN		STD_ULOGIC;
+				  rst						:	IN 	STD_ULOGIC;
+				  nonce					:	IN		STD_ULOGIC_VECTOR(15 DOWNTO 0);
+				  cerosOK				:	IN 	STD_ULOGIC;
+				  salida_nonce			:	OUT	STD_ULOGIC_VECTOR(15 DOWNTO 0));
+END ENTITY;
+---------------------------------- 
+
+----------------------------------
+ARCHITECTURE Reg_NonceArchh OF Reg_Nonce IS
+	SIGNAL	registro_nonce		:	STD_ULOGIC_VECTOR(15 DOWNTO 0);
+BEGIN
+
+	salida_nonce <= registro_nonce;
+	
+	PROCESS(clk,rst)
+	BEGIN
+		IF(rst = '0') THEN
+		
+			registro_nonce <=	(OTHERS => '0');
+
+		ELSIF(RISING_EDGE(clk)) THEN
+			IF (cerosOK = '1') THEN
+				registro_nonce <= nonce;
+			END IF;
+		END IF;
+	END PROCESS;
+END ARCHITECTURE Reg_NonceArchh;

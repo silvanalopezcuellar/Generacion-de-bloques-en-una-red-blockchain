@@ -1,0 +1,29 @@
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;  
+USE ieee.numeric_std.all; 
+------------------------------------------------------
+ENTITY prueba IS
+PORT(	in0a			: IN  STD_LOGIC;
+		in1a			: IN  STD_LOGIC;
+		in0o			: IN  STD_LOGIC;
+		in1o			: IN  STD_LOGIC;
+		output			: OUT STD_LOGIC);
+END ENTITY prueba;  
+------------------------------------------------------
+ARCHITECTURE structural OF prueba IS 
+------------------------------------------------------
+BEGIN
+	-- Component Instantiation
+	greaterThan2Module_0: ENTITY work.
+	PORT MAP(	input_0 => in0a,
+					input_1 => in1a,
+					vsdfgb  => output);
+	
+	twoBitEqModule_1: ENTITY work.
+	PORT MAP(	ina => in0o,
+					inb => in1o,
+					fdssvs  => a_igual_b_msb);
+
+
+					
+END ARCHITECTURE structural;

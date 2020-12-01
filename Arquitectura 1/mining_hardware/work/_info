@@ -1,0 +1,1565 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/estudiante/Pictures/mining_hardware
+Eascii_to_integer
+Z0 w1574634866
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware
+Z5 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/ascii_to_integer.vhd
+Z6 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/ascii_to_integer.vhd
+l0
+L5
+V7nPD4V>GN@HIOT<H7:8^a2
+!s100 R]ed48=@^09?lo[_flXN93
+Z7 OV;C;10.4b;61
+32
+Z8 !s110 1574636743
+!i10b 1
+Z9 !s108 1574636743.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/ascii_to_integer.vhd|
+Z11 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/ascii_to_integer.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1
+Abehaviour
+R1
+R2
+R3
+Z14 DEx4 work 16 ascii_to_integer 0 22 7nPD4V>GN@HIOT<H7:8^a2
+l13
+L12
+VB^c5]gaizj;lJFM>HzTVA0
+!s100 a[D225Zl^P4cEfaCCbgY70
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebin_to_ascii
+R0
+R1
+R2
+R3
+R4
+Z15 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/bin_to_ascii.vhd
+Z16 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/bin_to_ascii.vhd
+l0
+L5
+VzWglcbCbM_D[YmTNQF^f]1
+!s100 MbeeHCIYVaeIn;eM>1m]F3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/bin_to_ascii.vhd|
+Z18 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/bin_to_ascii.vhd|
+!i113 1
+R12
+R13
+Abehaviour2
+R1
+R2
+R3
+DEx4 work 12 bin_to_ascii 0 22 zWglcbCbM_D[YmTNQF^f]1
+l13
+L12
+V=5[zmVkN3InoMj1h<0VQj3
+!s100 =iKbcidaD`PcM]KQBGTUS1
+R7
+32
+Z19 !s110 1574636744
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ecomparador
+Z20 w1574634865
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z22 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R1
+R2
+R3
+R4
+Z23 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador.vhd
+Z24 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador.vhd
+l0
+L9
+VUhg6W;dJZDa1;F4KT04JW0
+!s100 z5@TWN3a88l9NH`a<hh271
+R7
+32
+R19
+!i10b 1
+Z25 !s108 1574636744.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador.vhd|
+Z27 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador.vhd|
+!i113 1
+R12
+R13
+Acomparador_arch
+R21
+R22
+R1
+R2
+R3
+Z28 DEx4 work 10 comparador 0 22 Uhg6W;dJZDa1;F4KT04JW0
+l23
+L20
+V]<=f?`=fj_kVEHEnFcGDY2
+!s100 9glU:FaHNG4h]feZfaaN^2
+R7
+32
+R19
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Ecomparador_ceros
+R0
+R1
+R2
+R3
+R4
+Z29 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador_ceros.vhd
+Z30 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador_ceros.vhd
+l0
+L5
+ViTL:bmjF:=kHR8h<I^n3;2
+!s100 k<L_RG2RoL<_<KlDfzO>z0
+R7
+32
+R19
+!i10b 1
+R25
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador_ceros.vhd|
+Z32 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comparador_ceros.vhd|
+!i113 1
+R12
+R13
+Azeros
+R1
+R2
+R3
+Z33 DEx4 work 16 comparador_ceros 0 22 iTL:bmjF:=kHR8h<I^n3;2
+l31
+L17
+VSMmnKR[1bE2O1DV>j@g681
+!s100 5Sm=<]PFQf19lRi2eka^31
+R7
+32
+R19
+!i10b 1
+R25
+R31
+R32
+!i113 1
+R12
+R13
+Ecomunicacion
+Z34 w1574636104
+R1
+R2
+R3
+R4
+Z35 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comunicacion.vhd
+Z36 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comunicacion.vhd
+l0
+L6
+V0BH3Yl8o>>P;:Mf55lNVM3
+!s100 ^1VBI6>:fz=j3=84e3dXQ3
+R7
+32
+Z37 !s110 1574636745
+!i10b 1
+Z38 !s108 1574636745.000000
+Z39 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comunicacion.vhd|
+Z40 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/comunicacion.vhd|
+!i113 1
+R12
+R13
+Acomunicacionarch
+Z41 DEx4 work 16 serial_converter 0 22 iP4hBD_z1]<Afj;o<IjK>2
+Z42 DEx4 work 18 controltransmision 0 22 Dzhi?>O8[7^oeQDlb9hia0
+Z43 DEx4 work 3 ram 0 22 D5N1QHQoPmA`SHfagHkOW2
+Z44 DEx4 work 6 cont_c 0 22 PG]EDi=eZ[z?B7fCR4giV3
+R14
+Z45 DEx4 work 13 reg_num_ceros 0 22 M=YKYSYW_K5CEke^I:dB[3
+Z46 DEx4 work 16 controlrecepcion 0 22 i>9f^`6YjoeRWmUV]A35H1
+R1
+R2
+R3
+Z47 DEx4 work 12 comunicacion 0 22 0BH3Yl8o>>P;:Mf55lNVM3
+l82
+L56
+VViNQfonazL5C:RO8SPRB]1
+!s100 `zNMhOiX0HDS]i[cYR_A:2
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R12
+R13
+Econt
+R0
+R1
+R2
+R3
+R4
+Z48 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont.vhd
+Z49 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont.vhd
+l0
+L6
+Vn>;bfLn7Ko[<l:BncRkC@0
+!s100 11]Gfee@ciMCEjmcf;1JM0
+R7
+32
+R37
+!i10b 1
+R38
+Z50 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont.vhd|
+Z51 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont.vhd|
+!i113 1
+R12
+R13
+Acontarchh
+R1
+R2
+R3
+Z52 DEx4 work 4 cont 0 22 n>;bfLn7Ko[<l:BncRkC@0
+l23
+L21
+VGBMOPNPSlJMYF5SJjWNPk2
+!s100 7gkZ88cB>MnAljm7B;W0Y3
+R7
+32
+R37
+!i10b 1
+R38
+R50
+R51
+!i113 1
+R12
+R13
+Econt_c
+R20
+R1
+R2
+R3
+R4
+Z53 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_c.vhd
+Z54 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_c.vhd
+l0
+L5
+VPG]EDi=eZ[z?B7fCR4giV3
+!s100 @5caRzNOUz?6Y=AIb9KBe3
+R7
+32
+Z55 !s110 1574636746
+!i10b 1
+Z56 !s108 1574636746.000000
+Z57 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_c.vhd|
+Z58 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_c.vhd|
+!i113 1
+R12
+R13
+Acont_carchh
+R1
+R2
+R3
+R44
+l20
+L18
+VYl@P=QI2T@^L:iDAhK^[30
+!s100 ZJmg09dNO8@c8ZVP^<j2N3
+R7
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R12
+R13
+Econt_normal
+R20
+R1
+R2
+R3
+R4
+Z59 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_normal.vhd
+Z60 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_normal.vhd
+l0
+L6
+VflfCFe27cJIloDkYCdREO3
+!s100 ?1kC^R?L8OffI9z[WIa@62
+R7
+32
+R55
+!i10b 1
+R56
+Z61 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_normal.vhd|
+Z62 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_normal.vhd|
+!i113 1
+R12
+R13
+Acontnarchh
+R1
+R2
+R3
+Z63 DEx4 work 11 cont_normal 0 22 flfCFe27cJIloDkYCdREO3
+l23
+L21
+Vi_Be@?0OiVazI=C;Y2HX81
+!s100 dcB41N2@dAO5W;6f7;ae03
+R7
+32
+R55
+!i10b 1
+R56
+R61
+R62
+!i113 1
+R12
+R13
+Econt_t
+R20
+R1
+R2
+R3
+R4
+Z64 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_t.vhd
+Z65 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_t.vhd
+l0
+L6
+Vm<HE;WIzO45ghem9hoSz<2
+!s100 VP]EleN@Lh@2]2<Hbhb2k1
+R7
+32
+R55
+!i10b 1
+R56
+Z66 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_t.vhd|
+Z67 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cont_t.vhd|
+!i113 1
+R12
+R13
+Acont_tarchh
+R1
+R2
+R3
+Z68 DEx4 work 6 cont_t 0 22 m<HE;WIzO45ghem9hoSz<2
+l23
+L21
+Vc`eC84<KAcW4HckaeGh660
+!s100 GC72aB=Xz5cN860_7ZMM71
+R7
+32
+R55
+!i10b 1
+R56
+R66
+R67
+!i113 1
+R12
+R13
+Econtgen
+R20
+R1
+R2
+R3
+R4
+Z69 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/contGEN.vhd
+Z70 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/contGEN.vhd
+l0
+L7
+VjbAT=diT2DTIVIGV0e]d70
+!s100 1RmOC_Q0JJ77cV3T30O8H1
+R7
+32
+Z71 !s110 1574636747
+!i10b 1
+Z72 !s108 1574636747.000000
+Z73 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/contGEN.vhd|
+Z74 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/contGEN.vhd|
+!i113 1
+R12
+R13
+Acontgenarchh
+R1
+R2
+R3
+Z75 DEx4 work 7 contgen 0 22 jbAT=diT2DTIVIGV0e]d70
+l26
+L23
+VI_7bF6z8QAIiEFj;1=CaL0
+!s100 6hMTb[Wa>e_[Mhm3QTa;F3
+R7
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 1
+R12
+R13
+Econtrol_gen_n
+R20
+R2
+R3
+R4
+Z76 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_gen_n.vhd
+Z77 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_gen_n.vhd
+l0
+L6
+V=2@aUd=K<aXE9831Xhb:h3
+!s100 o<z@AO4WOViKA=E9Jm7WS3
+R7
+32
+R71
+!i10b 1
+R72
+Z78 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_gen_n.vhd|
+Z79 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_gen_n.vhd|
+!i113 1
+R12
+R13
+Acontrolgenn
+R2
+R3
+Z80 DEx4 work 13 control_gen_n 0 22 =2@aUd=K<aXE9831Xhb:h3
+l34
+L25
+VH2m2ina1:]KfnPoOf:T`S2
+!s100 7Zd0^DEQo3XCdB;Ee[k^b3
+R7
+32
+R71
+!i10b 1
+R72
+R78
+R79
+!i113 1
+R12
+R13
+Econtrol_inoutregister
+R0
+R2
+R3
+R4
+Z81 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_inoutregister.vhd
+Z82 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_inoutregister.vhd
+l0
+L6
+Vb`RH2cTH3N4FB`CFj`<cR0
+!s100 @XYfW24d[HUEU5]j4X9Qo1
+R7
+32
+R71
+!i10b 1
+R72
+Z83 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_inoutregister.vhd|
+Z84 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/control_inoutregister.vhd|
+!i113 1
+R12
+R13
+Aonehot
+R2
+R3
+Z85 DEx4 work 21 control_inoutregister 0 22 b`RH2cTH3N4FB`CFj`<cR0
+l44
+L33
+V8NoUJf8Q@kZhTM5;hA7Uc3
+!s100 KSEzR@@bSGcN?k4:`jcjA1
+R7
+32
+Z86 !s110 1574636748
+!i10b 1
+R72
+R83
+R84
+!i113 1
+R12
+R13
+Econtrolglobal
+Z87 w1574636059
+R2
+R3
+R4
+Z88 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlGLOBAL.vhd
+Z89 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlGLOBAL.vhd
+l0
+L6
+Ven2C9S:=cVj5:WlX4JIBR0
+!s100 `8K@DP0M9iDhUE?013@?h2
+R7
+32
+R86
+!i10b 1
+Z90 !s108 1574636748.000000
+Z91 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlGLOBAL.vhd|
+Z92 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlGLOBAL.vhd|
+!i113 1
+R12
+R13
+Acontrolglob
+R2
+R3
+Z93 DEx4 work 13 controlglobal 0 22 en2C9S:=cVj5:WlX4JIBR0
+l40
+L33
+VIH;;gDeXGJTl40UXSOkFD2
+!s100 WFGMBdUVSnXcNRPLJWfi]2
+R7
+32
+R86
+!i10b 1
+R90
+R91
+R92
+!i113 1
+R12
+R13
+Econtrolrecepcion
+Z94 w1574636158
+R2
+R3
+R4
+Z95 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlrecepcion.vhd
+Z96 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlrecepcion.vhd
+l0
+L4
+Vi>9f^`6YjoeRWmUV]A35H1
+!s100 @NbV8LU`5=U?MTE?hT5`;2
+R7
+32
+R86
+!i10b 1
+R90
+Z97 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlrecepcion.vhd|
+Z98 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controlrecepcion.vhd|
+!i113 1
+R12
+R13
+Aonehot
+R2
+R3
+R46
+l52
+L48
+V2e7SMe`dZmX6jG28nBZFD2
+!s100 04Lm6KXRoRPT?7z5W1cJ[1
+R7
+32
+R86
+!i10b 1
+R90
+R97
+R98
+!i113 1
+R12
+R13
+Econtroltransmision
+R87
+R2
+R3
+R4
+Z99 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controltransmision.vhd
+Z100 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controltransmision.vhd
+l0
+L4
+VDzhi?>O8[7^oeQDlb9hia0
+!s100 [JAnmH3`1S:D3=K^BR0i81
+R7
+32
+Z101 !s110 1574636749
+!i10b 1
+Z102 !s108 1574636749.000000
+Z103 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controltransmision.vhd|
+Z104 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/controltransmision.vhd|
+!i113 1
+R12
+R13
+Aonehot
+R2
+R3
+R42
+l25
+L21
+VM53GHd3:]63dRY4fJJGOG2
+!s100 7eeY;;U]HhzVF:Uk]7oQa0
+R7
+32
+R101
+!i10b 1
+R102
+R103
+R104
+!i113 1
+R12
+R13
+Ecron1
+R20
+R1
+R2
+R3
+R4
+Z105 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cron1.vhd
+Z106 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cron1.vhd
+l0
+L5
+VZ`WbOQjJzg`B07eaeg:j52
+!s100 =_67Ii]CQmk5MzM[9966B3
+R7
+32
+R101
+!i10b 1
+R102
+Z107 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cron1.vhd|
+Z108 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cron1.vhd|
+!i113 1
+R12
+R13
+Acron1arch
+R1
+R2
+R3
+DEx4 work 5 cron1 0 22 Z`WbOQjJzg`B07eaeg:j52
+l19
+L17
+VbD^4SF5QFgk^dg1WJSEf;3
+!s100 o4PY=@ff;>7KhPIi7jLPD2
+R7
+32
+R101
+!i10b 1
+R102
+R107
+R108
+!i113 1
+R12
+R13
+Ecuadrados_medios
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z109 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cuadrados_medios.vhd
+Z110 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cuadrados_medios.vhd
+l0
+L9
+VYfmC2b7d1i`0_JWBc;WeW2
+!s100 8b@DheJfg5:W=MF89haXa0
+R7
+32
+Z111 !s110 1574636750
+!i10b 1
+Z112 !s108 1574636750.000000
+Z113 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cuadrados_medios.vhd|
+Z114 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/cuadrados_medios.vhd|
+!i113 1
+R12
+R13
+Acuadm_arch
+R21
+R22
+R1
+R2
+R3
+Z115 DEx4 work 16 cuadrados_medios 0 22 YfmC2b7d1i`0_JWBc;WeW2
+l26
+L22
+VnWbV`4S;0hOAEQMV0Ame_0
+!s100 OET;`EfXhTh:5DBolE;Z<2
+R7
+32
+R111
+!i10b 1
+R112
+R113
+R114
+!i113 1
+R12
+R13
+Efuncion_hash
+R0
+R21
+R22
+R1
+R2
+R3
+R4
+Z116 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/funcion_hash.vhd
+Z117 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/funcion_hash.vhd
+l0
+L8
+Vc8n74]K8]mNWnfCMmcUB?1
+!s100 bXoYMeXSAnTiDUQk8B_TE2
+R7
+32
+R111
+!i10b 1
+R112
+Z118 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/funcion_hash.vhd|
+Z119 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/funcion_hash.vhd|
+!i113 1
+R12
+R13
+Afuncion_hasharch
+R52
+R85
+Z120 DEx4 work 17 inregister_sha256 0 22 kfbJT=P1hM6g[IiCe]Zc43
+Z121 DEx4 work 18 sha256_outregister 0 22 ]CBhWQILMAoZC`__ZXbQY2
+R21
+R22
+R1
+R2
+R3
+Z122 DEx4 work 12 funcion_hash 0 22 c8n74]K8]mNWnfCMmcUB?1
+l50
+L23
+V820lg>cUo;Z>V^j8C[3O31
+!s100 n?_eWQ`]:E01_ALGgeLDO1
+R7
+32
+R111
+!i10b 1
+R112
+R118
+R119
+!i113 1
+R12
+R13
+Egeneracion_nonce
+R0
+R1
+R2
+R3
+R4
+Z123 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/generacion_nonce.vhd
+Z124 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/generacion_nonce.vhd
+l0
+L6
+VaMHQSU?cZi>?APgGPP]GN3
+!s100 YA>;jQWAIY1IczSWJNi813
+R7
+32
+Z125 !s110 1574636751
+!i10b 1
+Z126 !s108 1574636751.000000
+Z127 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/generacion_nonce.vhd|
+Z128 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/generacion_nonce.vhd|
+!i113 1
+R12
+R13
+Ageneracion_noncearch
+R63
+R75
+R80
+Z129 DEx4 work 17 registro_semillas 0 22 ^FJoFJhX5Y67fRIiNX:3L0
+R115
+Z130 DEx4 work 11 nonce_build 0 22 1;da3D`GRI4A2mGlgZ7mi3
+R28
+R21
+R22
+Z131 DEx4 work 13 multiplicador 0 22 ?o[MlK_<SSlljYP]KnN6S0
+R1
+R2
+R3
+Z132 DEx4 work 16 generacion_nonce 0 22 aMHQSU?cZi>?APgGPP]GN3
+l34
+L21
+V><UJhka5dPRTWmSPZj[A[1
+!s100 5WEfEDYCg^z8dJCh@MeLY3
+R7
+32
+R125
+!i10b 1
+R126
+R127
+R128
+!i113 1
+R12
+R13
+Einregister_sha256
+R0
+R21
+R22
+R1
+R2
+R3
+R4
+Z133 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/inregister_sha256.vhd
+Z134 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/inregister_sha256.vhd
+l0
+L9
+VkfbJT=P1hM6g[IiCe]Zc43
+!s100 IR38aA[zRYFbQH;D<E6oA2
+R7
+32
+R125
+!i10b 1
+R126
+Z135 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/inregister_sha256.vhd|
+Z136 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/inregister_sha256.vhd|
+!i113 1
+R12
+R13
+Ainregister_arch
+R21
+R22
+R1
+R2
+R3
+R120
+l29
+L24
+VX<`F=mBlUB[S<[J`2fM?f2
+!s100 3[^g1[63;V9_BED=4jGmo0
+R7
+32
+R125
+!i10b 1
+R126
+R135
+R136
+!i113 1
+R12
+R13
+Emining_hardware
+Z137 w1574636709
+R21
+R22
+R1
+R2
+R3
+R4
+Z138 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware.vhd
+Z139 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware.vhd
+l0
+L8
+V3gX<844bPY^XHEHYFHddH0
+!s100 cm@W9>81PGXP?BDgflI]23
+R7
+32
+Z140 !s110 1574636752
+!i10b 1
+Z141 !s108 1574636752.000000
+Z142 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware.vhd|
+Z143 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware.vhd|
+!i113 1
+R12
+R13
+Amining_hardwarearch
+Z144 DEx4 work 9 salida_tr 0 22 ojQTMU:F4<;jjV84DgUfG0
+R47
+R63
+R33
+R93
+R132
+R122
+Z145 DEx4 work 9 reg_nonce 0 22 BM]RY5DWm9<gXlKmUDA[m1
+Z146 DEx4 work 6 reg_go 0 22 @PD6jN24A^o56iTc0c1jJ1
+Z147 DEx4 work 6 tiempo 0 22 LE_9X>1C]DD3g>_OCHdWa0
+R21
+R22
+R1
+R2
+R3
+Z148 DEx4 work 15 mining_hardware 0 22 3gX<844bPY^XHEHYFHddH0
+l100
+L61
+Va6bngz;L;L5K=UgBhXJOO1
+!s100 Xc14ggo8S;icHFTlAlUb]3
+R7
+32
+R140
+!i10b 1
+R141
+R142
+R143
+!i113 1
+R12
+R13
+Emining_hardware_tb
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z149 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware_tb.vhd
+Z150 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware_tb.vhd
+l0
+L8
+Vo:J?lOB9CjR@l7:_hE:S01
+!s100 [fIja^VNMAfYzDJ_ioDHM3
+R7
+32
+R140
+!i10b 1
+R141
+Z151 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware_tb.vhd|
+Z152 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/mining_hardware_tb.vhd|
+!i113 1
+R12
+R13
+Atestbench_hw
+R148
+R21
+R22
+R1
+R2
+R3
+DEx4 work 18 mining_hardware_tb 0 22 o:J?lOB9CjR@l7:_hE:S01
+l61
+L51
+VHQh0aFO:>_o7gEaQn^Chf0
+!s100 cabl[l9HHC`YNZW4jMBed2
+R7
+32
+R140
+!i10b 1
+R141
+R151
+R152
+!i113 1
+R12
+R13
+Emultiplicador
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z153 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/multiplicador.vhd
+Z154 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/multiplicador.vhd
+l0
+L8
+V?o[MlK_<SSlljYP]KnN6S0
+!s100 S0`T:bRT56jA9;PzLLTJl2
+R7
+32
+R140
+!i10b 1
+R141
+Z155 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/multiplicador.vhd|
+Z156 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/multiplicador.vhd|
+!i113 1
+R12
+R13
+Amult_arch
+R21
+R22
+R1
+R2
+R3
+R131
+l24
+L20
+VXHIKC9mWn=XTU0XOPX9?<3
+!s100 iQaFOQPSR8JG8TB_lJ^WL1
+R7
+32
+R140
+!i10b 1
+R141
+R155
+R156
+!i113 1
+R12
+R13
+Enonce_build
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z157 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/nonce_build.vhd
+Z158 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/nonce_build.vhd
+l0
+L9
+V1;da3D`GRI4A2mGlgZ7mi3
+!s100 hi?Z_SoLGKZ:CUzm>lQk>3
+R7
+32
+Z159 !s110 1574636753
+!i10b 1
+Z160 !s108 1574636753.000000
+Z161 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/nonce_build.vhd|
+Z162 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/nonce_build.vhd|
+!i113 1
+R12
+R13
+Anbuild_arch
+R21
+R22
+R1
+R2
+R3
+R130
+l27
+L23
+VDa<^PSb0bE]Q`j9z2CC?m0
+!s100 [<z==JzEVWf<@Al^A>>V;3
+R7
+32
+R159
+!i10b 1
+R160
+R161
+R162
+!i113 1
+R12
+R13
+Eram
+R20
+R1
+R2
+R3
+R4
+Z163 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/RAM.vhd
+Z164 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/RAM.vhd
+l0
+L5
+VD5N1QHQoPmA`SHfagHkOW2
+!s100 =`Yo0NXkO^SeUGMZkjjUh3
+R7
+32
+R159
+!i10b 1
+R160
+Z165 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/RAM.vhd|
+Z166 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/RAM.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R43
+l30
+L25
+VdDgCV@NRPDcZ3Zimn9]IE3
+!s100 3`id<_0g<g5UAY`W@Ek<W0
+R7
+32
+R159
+!i10b 1
+R160
+R165
+R166
+!i113 1
+R12
+R13
+Ereg_go
+R20
+R1
+R2
+R3
+R4
+Z167 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Go.vhd
+Z168 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Go.vhd
+l0
+L5
+V@PD6jN24A^o56iTc0c1jJ1
+!s100 ]DKfR[b4i2iWUCLlJLFTm0
+R7
+32
+Z169 !s110 1574636754
+!i10b 1
+Z170 !s108 1574636754.000000
+Z171 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Go.vhd|
+Z172 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Go.vhd|
+!i113 1
+R12
+R13
+Areg_goarchh
+R1
+R2
+R3
+R146
+l18
+L15
+Vg:H]]C7oUMYj85CK>d3H53
+!s100 kT9LFKd9??7;1lX0]aA<X3
+R7
+32
+R169
+!i10b 1
+R170
+R171
+R172
+!i113 1
+R12
+R13
+Ereg_nonce
+R20
+R1
+R2
+R3
+R4
+Z173 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Nonce.vhd
+Z174 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Nonce.vhd
+l0
+L5
+VBM]RY5DWm9<gXlKmUDA[m1
+!s100 O_W4>CBD?RI=BBNC:<a080
+R7
+32
+R169
+!i10b 1
+R170
+Z175 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Nonce.vhd|
+Z176 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Nonce.vhd|
+!i113 1
+R12
+R13
+Areg_noncearchh
+R1
+R2
+R3
+R145
+l20
+L17
+Vjd3Lmg:6hJZ^lH[kJ<meT0
+!s100 zRai0eb=NKRCcC5O=obli1
+R7
+32
+R169
+!i10b 1
+R170
+R175
+R176
+!i113 1
+R12
+R13
+Ereg_num_ceros
+R20
+R1
+R2
+R3
+R4
+Z177 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Num_Ceros.vhd
+Z178 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Num_Ceros.vhd
+l0
+L5
+VM=YKYSYW_K5CEke^I:dB[3
+!s100 J9Bzoj:J2kO6O;3@@G45o1
+R7
+32
+Z179 !s110 1574636755
+!i10b 1
+Z180 !s108 1574636755.000000
+Z181 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Num_Ceros.vhd|
+Z182 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Num_Ceros.vhd|
+!i113 1
+R12
+R13
+Areg_num_cerosarchh
+R1
+R2
+R3
+R45
+l19
+L16
+VgTzj_iUD5lePU9PX8^T:X2
+!s100 gN`o5::>JG:GYfT6C_e`m0
+R7
+32
+R179
+!i10b 1
+R180
+R181
+R182
+!i113 1
+R12
+R13
+Ereg_salida
+R20
+R1
+R2
+R3
+R4
+Z183 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Salida.vhd
+Z184 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Salida.vhd
+l0
+L5
+ViL0U=fQ[iFH_K_eWoN`Cf3
+!s100 mFY7>Io^eg?6`8hXSIVGX0
+R7
+32
+R179
+!i10b 1
+R180
+Z185 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Salida.vhd|
+Z186 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/Reg_Salida.vhd|
+!i113 1
+R12
+R13
+Areg_salidaarchh
+R1
+R2
+R3
+DEx4 work 10 reg_salida 0 22 iL0U=fQ[iFH_K_eWoN`Cf3
+l16
+L14
+VM7n>RUhnbaLUT:_Go9e;X3
+!s100 Y7T5WoCMH1JdTUz[bP28Q3
+R7
+32
+R179
+!i10b 1
+R180
+R185
+R186
+!i113 1
+R12
+R13
+Eregistro_semillas
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z187 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/registro_semillas.vhd
+Z188 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/registro_semillas.vhd
+l0
+L9
+V^FJoFJhX5Y67fRIiNX:3L0
+!s100 ?H[JOIY>;BgmM]??d9iho3
+R7
+32
+Z189 !s110 1574636756
+!i10b 1
+Z190 !s108 1574636756.000000
+Z191 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/registro_semillas.vhd|
+Z192 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/registro_semillas.vhd|
+!i113 1
+R12
+R13
+Aregistersem_arch
+R21
+R22
+R1
+R2
+R3
+R129
+l29
+L24
+VQnSz4h3?_Pjm@4f2k5Tlh1
+!s100 ^C<D`aR;LignFVG@7LTPo2
+R7
+32
+R189
+!i10b 1
+R190
+R191
+R192
+!i113 1
+R12
+R13
+Esalida_tr
+R20
+R1
+R2
+R3
+R4
+Z193 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/salida_tr.vhd
+Z194 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/salida_tr.vhd
+l0
+L5
+VojQTMU:F4<;jjV84DgUfG0
+!s100 L8d8=;VTbBgF8WWnEg95?0
+R7
+32
+R189
+!i10b 1
+R190
+Z195 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/salida_tr.vhd|
+Z196 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/salida_tr.vhd|
+!i113 1
+R12
+R13
+Asalida_trarchh
+R1
+R2
+R3
+R144
+l17
+L15
+VRJMC4NDFaeE9?;dlnGT;71
+!s100 4j3E4mVP:nEY5N1bRR[i52
+R7
+32
+R189
+!i10b 1
+R190
+R195
+R196
+!i113 1
+R12
+R13
+Eserial_converter
+R20
+R2
+R3
+R4
+Z197 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/serial_converter.vhd
+Z198 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/serial_converter.vhd
+l0
+L4
+ViP4hBD_z1]<Afj;o<IjK>2
+!s100 VJKj?Pm7T3gB>a@EX]Y]<3
+R7
+32
+Z199 !s110 1574636757
+!i10b 1
+R190
+Z200 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/serial_converter.vhd|
+Z201 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/serial_converter.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R41
+l20
+L17
+VIm<NMQF3G49BhJIH_0I^d3
+!s100 Zl=__3ZO@dn]NZCXlh4ET3
+R7
+32
+R199
+!i10b 1
+R190
+R200
+R201
+!i113 1
+R12
+R13
+vsha256
+R199
+!i10b 1
+!s100 6:gjD6:?Z@SaO?7kV>g[T3
+I9=9g9[MVSQ`ooZV>5W>6G1
+Z202 VDg1SIo80bB@j0V0VzS_@n1
+R4
+R20
+8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256.v
+FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256.v
+Z203 L0 40
+Z204 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z205 !s108 1574636757.000000
+!s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256.v|
+!s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256.v|
+!i113 1
+R12
+vsha256_core
+R199
+!i10b 1
+!s100 U8mBY^gK8bC5mTN[PGR8f3
+I@@d3fL>3b7@O_3SX0W21A2
+R202
+R4
+R20
+8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_core.v
+FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_core.v
+R203
+R204
+r1
+!s85 0
+31
+R205
+!s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_core.v|
+!s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_core.v|
+!i113 1
+R12
+vsha256_k_constants
+Z206 !s110 1574636758
+!i10b 1
+!s100 GPi2Mg433GK;D2UAZJZOE2
+I[;cGW;`NRY0`ZY72[c_7[1
+R202
+R4
+R20
+8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_k_constants.v
+FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_k_constants.v
+L0 39
+R204
+r1
+!s85 0
+31
+Z207 !s108 1574636758.000000
+!s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_k_constants.v|
+!s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_k_constants.v|
+!i113 1
+R12
+Esha256_outregister
+R20
+R21
+R22
+R1
+R2
+R3
+R4
+Z208 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_outregister.vhd
+Z209 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_outregister.vhd
+l0
+L9
+V]CBhWQILMAoZC`__ZXbQY2
+!s100 ;OZ_RIFQL=`;PFN0noJUh1
+R7
+32
+R206
+!i10b 1
+R207
+Z210 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_outregister.vhd|
+Z211 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_outregister.vhd|
+!i113 1
+R12
+R13
+Aregister_arch
+R21
+R22
+R1
+R2
+R3
+R121
+l23
+L19
+VHkOO1GSWU^YA]8aM6j[2B2
+!s100 YRd]mFk:NPgV0e2Lm3B]P0
+R7
+32
+R206
+!i10b 1
+R207
+R210
+R211
+!i113 1
+R12
+R13
+vsha256_stream
+Z212 !s110 1574636759
+!i10b 1
+!s100 @@_[<_iA]<aQY]P@5z?:Q1
+IPz2BzBdFSb6h]DdMD3`@K2
+R202
+R4
+R20
+8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_stream.v
+FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_stream.v
+R203
+R204
+r1
+!s85 0
+31
+Z213 !s108 1574636759.000000
+!s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_stream.v|
+!s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_stream.v|
+!i113 1
+R12
+vsha256_w_mem
+R212
+!i10b 1
+!s100 aP0g`M[DF`_VjZ61I_>bU2
+I9o0S<B3hK5?kj=6e`2dLG0
+R202
+R4
+R20
+8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_w_mem.v
+FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_w_mem.v
+R203
+R204
+r1
+!s85 0
+31
+R213
+!s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_w_mem.v|
+!s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/sha256_w_mem.v|
+!i113 1
+R12
+Etiempo
+R20
+R1
+R2
+R3
+R4
+Z214 8C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/tiempo.vhd
+Z215 FC:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/tiempo.vhd
+l0
+L5
+VLE_9X>1C]DD3g>_OCHdWa0
+!s100 b0CA^TI9jGJJ33V5NULX;2
+R7
+32
+Z216 !s110 1574636760
+!i10b 1
+Z217 !s108 1574636760.000000
+Z218 !s90 -reportprogress|300|-work|work|C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/tiempo.vhd|
+Z219 !s107 C:/Users/TG1826/Pictures/mining_hardware-20191124T223020Z-001/mining_hardware/tiempo.vhd|
+!i113 1
+R12
+R13
+Atiempoarch
+R68
+R1
+R2
+R3
+R147
+l28
+L21
+Z220 VR?YXE;e:lOh^CEa@U`00L1
+Z221 !s100 bl:nAlQUz^]0WY;=j798`0
+R7
+32
+R216
+!i10b 1
+R217
+R218
+R219
+!i113 1
+R12
+R13

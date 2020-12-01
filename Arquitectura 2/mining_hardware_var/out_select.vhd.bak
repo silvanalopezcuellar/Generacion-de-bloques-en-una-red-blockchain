@@ -1,0 +1,67 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.all;
+-------------------------------
+ENTITY out_select IS
+		PORT  ( clk				:	IN STD_ULOGIC;
+				 rst				:	IN	STD_ULOGIC;
+				 comparar_ceros:	IN	STD_ULOGIC_VECTOR (7 DOWNTO 0);
+				 enable			:	OUT STD_ULOGIC;
+				 ceros_ok		:	OUT STD_ULOGIC_VECTOR (7 DOWNTO 0));
+END ENTITY;
+--------------------------------
+ARCHITECTURE out_select_rtl OF out_select IS
+	SIGNAL reg_cerosOK		: STD_ULOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL reg_enable			: STD_ULOGIC;
+BEGIN
+	
+	ceros_ok <= reg_cerosOK;
+	enable	<= reg_enable;
+	
+	PROCESS (clk, rst)
+	BEGIN
+		IF (rst='0') THEN
+			reg_enable 	<= '0';
+			reg_cerosOK	<= "00000000";
+		ELSIF (rising_edge(clk)) THEN
+		
+			IF(comparar_ceros(0) OR comparar_ceros(1) OR comparar_ceros(2) 
+				OR comparar_ceros(3) OR comparar_ceros(4) OR comparar_ceros(5) 
+				OR comparar_ceros(6) OR comparar_ceros(7)) THEN
+				
+				IF (comparar_ceros(0)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "10000000";
+				ELSIF (comparar_ceros(1)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "01000000";
+				ELSIF (comparar_ceros(2)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00100000";
+				ELSIF (comparar_ceros(3)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00010000";
+				ELSIF (comparar_ceros(4)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00001000";
+				ELSIF (comparar_ceros(5)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00000100";
+				ELSIF (comparar_ceros(6)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00000010";
+				ELSIF (comparar_ceros(7)='1') THEN
+					reg_enable 	<= '1';
+					reg_cerosOK	<= "00000001";
+				ELSE
+				reg_enable 	<= '0';
+				reg_cerosOK	<= "00000000";
+			ELSE
+			reg_enable 	<= '0';
+			reg_cerosOK	<= "00000000";
+				END IF;
+			END IF;
+		END IF;
+		
+	END PROCESS;
+	
+END ARCHITECTURE;

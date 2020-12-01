@@ -1,0 +1,89 @@
+
+State Machine - |mining_hardware|comunicacion:Module_comunicacion|controltransmision:controltr|pr_state
+Name pr_state.siete pr_state.seis pr_state.cinco pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 0 0 0 
+pr_state.dos 0 0 0 0 0 1 1 
+pr_state.tres 0 0 0 0 1 0 1 
+pr_state.cuatro 0 0 0 1 0 0 1 
+pr_state.cinco 0 0 1 0 0 0 1 
+pr_state.seis 0 1 0 0 0 0 1 
+pr_state.siete 1 0 0 0 0 0 1 
+
+State Machine - |mining_hardware|comunicacion:Module_comunicacion|controlrecepcion:controlre|pr_state
+Name pr_state.doce pr_state.once pr_state.diez pr_state.nueve pr_state.ocho pr_state.siete pr_state.siete_mitad pr_state.seis pr_state.cinco pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 0 0 0 0 0 0 0 0 0 
+pr_state.dos 0 0 0 0 0 0 0 0 0 0 0 1 1 
+pr_state.tres 0 0 0 0 0 0 0 0 0 0 1 0 1 
+pr_state.cuatro 0 0 0 0 0 0 0 0 0 1 0 0 1 
+pr_state.cinco 0 0 0 0 0 0 0 0 1 0 0 0 1 
+pr_state.seis 0 0 0 0 0 0 0 1 0 0 0 0 1 
+pr_state.siete_mitad 0 0 0 0 0 0 1 0 0 0 0 0 1 
+pr_state.siete 0 0 0 0 0 1 0 0 0 0 0 0 1 
+pr_state.ocho 0 0 0 0 1 0 0 0 0 0 0 0 1 
+pr_state.nueve 0 0 0 1 0 0 0 0 0 0 0 0 1 
+pr_state.diez 0 0 1 0 0 0 0 0 0 0 0 0 1 
+pr_state.once 0 1 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.doce 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |mining_hardware|controlGLOBAL:Module_controlGLOBAL|nx_state
+Name nx_state.trece nx_state.fail nx_state.doce nx_state.once nx_state.diez nx_state.wait_comp nx_state.no_leer nx_state.nueve nx_state.ocho nx_state.siete nx_state.seis nx_state.cinco nx_state.cuatro nx_state.espera nx_state.tres nx_state.dos nx_state.uno 
+nx_state.uno 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+nx_state.dos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+nx_state.tres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+nx_state.espera 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+nx_state.cuatro 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+nx_state.cinco 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+nx_state.seis 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+nx_state.siete 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+nx_state.ocho 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+nx_state.nueve 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+nx_state.no_leer 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+nx_state.wait_comp 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.diez 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.once 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.doce 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.fail 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.trece 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |mining_hardware|generacion_nonce:Module_generacion_nonce|control_gen_n:Module_control_nonce|nx_state
+Name nx_state.nueve nx_state.ocho nx_state.siete nx_state.seis nx_state.cinco nx_state.cuatro nx_state.tres nx_state.espera nx_state.dos nx_state.uno nx_state.cero 
+nx_state.cero 0 0 0 0 0 0 0 0 0 0 0 
+nx_state.uno 0 0 0 0 0 0 0 0 0 1 1 
+nx_state.dos 0 0 0 0 0 0 0 0 1 0 1 
+nx_state.espera 0 0 0 0 0 0 0 1 0 0 1 
+nx_state.tres 0 0 0 0 0 0 1 0 0 0 1 
+nx_state.cuatro 0 0 0 0 0 1 0 0 0 0 1 
+nx_state.cinco 0 0 0 0 1 0 0 0 0 0 1 
+nx_state.seis 0 0 0 1 0 0 0 0 0 0 1 
+nx_state.siete 0 0 1 0 0 0 0 0 0 0 1 
+nx_state.ocho 0 1 0 0 0 0 0 0 0 0 1 
+nx_state.nueve 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |mining_hardware|funcion_hash:Module_funcion_hash|control_inoutregister:Module_controlInOutRegister|nx_state
+Name nx_state.quince nx_state.catorce nx_state.trece_5 nx_state.trece nx_state.doce nx_state.once nx_state.diez nx_state.nueve_5 nx_state.nueve nx_state.ocho_5 nx_state.ocho nx_state.siete nx_state.seis nx_state.cinco_6 nx_state.cinco_5 nx_state.cinco nx_state.cuatro nx_state.tres nx_state.dos nx_state.uno 
+nx_state.uno 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+nx_state.dos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+nx_state.tres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+nx_state.cuatro 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+nx_state.cinco 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+nx_state.cinco_5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+nx_state.cinco_6 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+nx_state.seis 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+nx_state.siete 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+nx_state.ocho 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+nx_state.ocho_5 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+nx_state.nueve 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.nueve_5 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.diez 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.once 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.doce 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.trece 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.trece_5 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.catorce 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+nx_state.quince 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |mining_hardware|funcion_hash:Module_funcion_hash|sha256:Module_SHA256|sha256_core:core|sha256_ctrl_reg
+Name sha256_ctrl_reg.CTRL_IDLE sha256_ctrl_reg.CTRL_DONE sha256_ctrl_reg.CTRL_ROUNDS 
+sha256_ctrl_reg.CTRL_IDLE 0 0 0 
+sha256_ctrl_reg.CTRL_ROUNDS 1 0 1 
+sha256_ctrl_reg.CTRL_DONE 1 1 0 

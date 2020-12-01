@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Fri Nov 29 17:29:36 2019
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : mining_hardware_var
+Top-level Entity Name : mining_hardware_var
+Family : Stratix IV
+Logic utilization : N/A
+    Combinational ALUTs : 54,165
+    Memory ALUTs : 0
+    Dedicated logic registers : 57,158
+Total registers : 57158
+Total pins : 5
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 22
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
